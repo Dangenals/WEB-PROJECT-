@@ -1,0 +1,201 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+    font-family: arial;
+}
+.menu-area{
+  top: 0;
+  position: sticky;
+  z-index: 99999;
+}
+.menu-area a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #061250 ;
+  background:lightgrey;
+  height: 50px;
+  font-family: Arial;
+  font-size: 15px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+#img1{
+width: 35%;
+}
+
+.menu-area a:hover {
+  color: blue;
+}
+
+.menu-area ul {
+  list-style: none;
+  display: flex;
+}
+
+.menu-area li {
+  position: relative;
+  width: 250px;
+  text-align: center;
+}
+.logo img{
+  width: 150px;
+}
+
+.menu-area img{
+  width: 50px;
+}
+
+
+#li1{
+  width: 50px;
+}
+.life{
+  font-size: 60px;
+}
+
+#f1{
+  width: 75%;
+  padding: 5px;
+  background-color: lightgrey;
+}
+
+header{
+  padding:5px;
+  background-color: white;
+  color:#00235f;
+  margin-top: -10px;
+}
+
+body{
+  margin: 0;
+  color:  #00235f ;
+  background-color: white;
+  padding: 0;
+}
+
+.slogan{
+  font-size: 70px;
+}
+
+.navbar{
+  width: 5rem;
+  height: 100vh;
+  position: fixed;
+  background: var(--bg-primary);
+  transition: width 200ms ease;
+}
+
+.navbar-nav{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  align-items:center;
+  height: 100%;
+}
+
+.nav-link{
+  width: 100%;
+  align-items: center;
+  height: 5rem;
+  color: var(--text-primary);
+  text-decoration: none;
+}
+
+.side-nav{
+  font-size:30px;
+  cursor:pointer;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: lightgrey;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidenav a {
+  font-family: sans-serif;
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+  color: darkblue;
+  transition: 0.3s;
+  margin-top: 30px;
+  font-weight: bold;
+}
+
+.sidenav a:hover {
+  color: blue;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.item img{
+  width: 100%;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+
+.container{
+  width: 70%;
+  display: grid;
+  grid-template-columns:repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 35px;
+}
+
+.block{
+  display: grid;
+  grid-template-columns: auto;
+  background-color: lightgrey;
+}
+.block img{
+   width: 100%;
+}
+
+.block p{
+  padding: 5px;
+}
+
+.block button{
+  width: 150px;
+  height: 40px;
+  font-size: 20px;
+  font-weight: bold;
+  background-color: #5ADB00;
+  border: 0px;
+}
+
+button:hover{
+  background-color: green;
+}
+
+.block h2{
+  padding: 5px;
+  color: red;
+}
+
+.txt{
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;

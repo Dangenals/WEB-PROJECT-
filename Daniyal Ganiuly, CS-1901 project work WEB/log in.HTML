@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>AMAZON TRAVEL HOME PAGE</title>
+  <link rel="stylesheet" type="text/css" href="log in.CSS">
+</head>
+<body>
+  <nav class="menu-area">
+    <ul>
+      <li id="li1"><a title="amazon" href="#"><span class="side-nav" onclick="openNav()">&#9776;</span></a></li>
+      <li><a title="amazon travel"href="#"><img id="img1" src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Amazon_logo.svg/1200px-Amazon_logo.svg.png"></i></a></li>
+      <li><a title="home" href="main.HTML">HOME</a></li>
+      <li><a title="about us"href="about us.HTML">ABOUT US</a></li>
+      <li><a title="hot tours" href="hot tours.HTML">HOT TOURS</a></li>
+      <li><a title="news" href="news.HTML">NEWS</a></li>
+      <li><a title="tickets" href="tickets.HTML">TICKETS</a></li>
+    </ul>
+  </nav>
+   <div id="Sidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <a title="you must visit" href="must visit.HTML">You must visit</a>
+  <a href="hiking.HTML">Hiking tours</a>
+  <a href="beach.HTML">Beach holidays</a>
+  <a href="contact us.HTML">Contact Us</a>
+</div>
+<script>
+function openNav() {
+  document.getElementById("Sidenav").style.width = "220px";
+}
+
+function closeNav() {
+  document.getElementById("Sidenav").style.width = "0";
+}
+</script>
+<div class="wrapper">
+<form>
+  <h1>Registration</h1>
+  <div class="form">
+    <div class="form-title">
+      Please, enter your data here:
+    </div>
+    <div class="input-form">
+      <div class="input">
+        <input type="text" placeholder="Login">
+      </div>
+      <div class="input">
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="input">
+        <input type="Password" placeholder="Password">
+      </div>
+      <div class="input">
+        <input type="Password" placeholder="Re-Password">
+      </div>
+    </div>
+    <div class="inner-msg">
+      <div class="msg">
+        <textarea placeholder="Your dream vocation is...."></textarea>
+      </div>
+    </div>
+		<div class="phone">
+       <input type="text" placeholder="Phone: +7(...).......">
+		</div>
+		<div class="radio">
+       <p>Preffered payment method:  </p>
+			 <label><input type="radio" name="payment" value="cash" />CASH</label>
+			 <label><input type="radio" name="payment" value="card" />CARD</label>
+		</div>
+		<div class="radio">
+       <p>Should we call you back:   </p>
+			 <label><input type="radio" name="yes" value="yes" />YES</label>
+			 <label><input type="radio" name="no" value="no" />NO</label>
+		</div>
+		<div class="buttons">
+        <input type="submit" class="btn" value="Submit">
+        <input type="reset" class="btn" value="Reset">
+    </div>
+		<div class="acc">
+			<p>Do you have an account?<span>  Login   </span></p>
+		</div>
+  </div>
+</form>
+</div>
+</body>
+</html>
